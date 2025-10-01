@@ -1,1 +1,1 @@
-ASIN
+ASINO

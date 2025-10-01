@@ -57,14 +57,24 @@
         .dialog button:hover {
             background-color: #0056b3;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <div class="dialog-overlay">
+    <div class="dialog-overlay" id="dialogOverlay">
         <div class="dialog">
             <h1>Hello World!</h1>
-            <button onclick="window.close()">Chiudi</button>
+            <button onclick="closeDialog()">Chiudi</button>
         </div>
     </div>
+
+    <script>
+        function closeDialog() {
+            document.getElementById('dialogOverlay').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
